@@ -9,7 +9,7 @@ import com.google.gson.annotations.SerializedName;
 
 public class ApiResponse {
 
-    @SerializedName("Answer")
+    @SerializedName("answer")
     @Expose
     public String Answer;
 }

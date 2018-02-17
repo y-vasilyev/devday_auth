@@ -66,13 +66,15 @@ public class MainActivity extends Activity {
 
     private void makeApiCall()
     {
-        DevDayApi api = CreateApi("", idToken);
+        DevDayApi api = CreateApi("http://rnd-123.2gis.local/", idToken);
 
         api.getUserProfile().enqueue(new Callback<ApiResponse>() {
             @Override
             public void onResponse(Call<ApiResponse> call, Response<ApiResponse> response) {
                 runOnUiThread(() -> {
-                    apiAnswer.setText(response.body().Answer);
+
+                    if(response.body() != null)
+                        apiAnswer.setText(response.body().Answer);
                 });
             }
 

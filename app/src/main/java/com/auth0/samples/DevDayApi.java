@@ -8,6 +8,6 @@ import retrofit2.http.GET;
  */
 
 public interface DevDayApi {
-    @GET("/api/profile")
+    @GET("DevDayAuthBackend/api/profile")
     Call<ApiResponse> getUserProfile();
 }

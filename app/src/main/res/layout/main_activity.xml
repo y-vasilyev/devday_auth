@@ -18,27 +18,36 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:text="Show Log in" />
-
-    <TextView
-        android:id="@+id/token"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="Not logged in"
-        android:textSize="21sp" />
+        android:layout_height="wrap_content">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/token"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Not logged in"
+                android:textSize="21sp" />
 
-    <Button
-        android:id="@+id/ApiButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:text="API call" />
+            <Button
+                android:id="@+id/ApiButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="API call" />
 
-    <TextView
-        android:id="@+id/apiAnswer"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="no api data"
-        android:textSize="21sp" />
+            <TextView
+                android:id="@+id/apiAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="no api data"
+                android:textSize="21sp" />
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>
